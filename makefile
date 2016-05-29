@@ -49,10 +49,13 @@ include $(PROJ_ROOT)/makesection/makerule/$(DEVICE)/make.$(DEVICE).$(TOOL)
 # Build the CSP and GEN libraries 
 #
 ########################################################################
+all:libs
 
 libs: $(TARGETS)
 
 abl: fwlib
+
+
 
 fwlib: 
 	$(ECHO) "Building" $(FWLIB) "support package source ->" \
