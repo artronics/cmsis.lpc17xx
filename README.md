@@ -7,12 +7,13 @@ Make sure you have this packages: `rmdir, makedepend, astyle`.
 
 Eidt `makeconfig` file accordingly. 
 
-`cd` to project directory and run `make`. This will create `DriverLPC17xxgnu.a` under `Driver/library` directory. You can now build examples inside `Examples` directory.
+`cd` to project directory and run `make`. This will create `DriverLPC17xxgnu.a` under `Driver/library` directory. You can now build examples inside `Examples` directory and enter `make rom`. You can debug you code using Jlink and eclipse.
 
 ##Toolchain
-I build the source code successfully using Codesourcery lite bineries [arm-2013.05-23-arm-none-eabi.osx.intelx86.bin](http://www.carlson-minot.com/available-arm-eabi-g-lite-builds-for-mac-os-x) for mac.
+I build the source code successfully using Codesourcery lite bineries (arm-2013.05-23-arm-none-eabi.osx.intelx86.bin)[http://www.carlson-minot.com/available-arm-eabi-g-lite-builds-for-mac-os-x] for mac.
 
 I also build the project with (GCC ARM Embedded)[https://launchpad.net/gcc-arm-embedded] version 5.3.1. You will get an linker error `undefined symbol _start`. You can add `libnosys.a` library to linker script which solve the linker problem however, debuging project does not work properly.
+In rom mode build there is a problem with undefined symbol `__bss_start` and `__bss_end`. I couldn't solve this problem.
 
 
 #Change log

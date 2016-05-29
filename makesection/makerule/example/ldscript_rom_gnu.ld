@@ -18,7 +18,12 @@
 OUTPUT_FORMAT ("elf32-littlearm", "elf32-bigarm", "elf32-littlearm")
 /*ENTRY(_start)*/
 SEARCH_DIR(.)
-/*GROUP(libnosys)*/
+
+/* Uncomment if you want to compile with gcc arm. it solves undefined symbol
+   _exit problem
+   In rom mode there is a problem with __bss_start and __bss_end which I couldn't solve it.
+  */
+/*GROUP(libnosys.a)*/
 
 MEMORY
 {
