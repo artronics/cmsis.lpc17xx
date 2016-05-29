@@ -2,11 +2,16 @@
 .cproject
 .project
 .settings
+
 # Object files
 *.o
 *.ko
 *.obj
 *.elf
+
+# Linker
+*.map
+*.srec
 
 # Precompiled Headers
 *.gch
