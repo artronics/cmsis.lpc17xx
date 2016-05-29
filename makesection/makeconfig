@@ -1,0 +1,29 @@
+########################################################################
+#
+# Configuration file for "make" session. 
+#
+########################################################################
+
+########################################################################
+#
+# Note: 
+# Add path of "tools" directory (in this folder) 
+# to the HEAD of SYSTEM PATH variable
+#
+########################################################################
+
+PROJ_ROOT			=/Users/jalal/projects/arm/lpc17xx/luna/lpc17xx.cmsis.driver.library
+CMCORE_TYPE			=CM3
+DEVICE				=LPC17xx
+MANUFACTURE			=NXP
+TOOL 				=gnu
+DEBUG_MODE			=1
+
+
+#GNU_INSTALL_ROOT	=/usr/local/arm-gcc
+#GNU_VERSION			=5.3.1
+GNU_INSTALL_ROOT	=/usr/local/carlson-minot/crosscompilers
+GNU_VERSION			=4.7.3
+
+IAR_INSTALL_ROOT	=C:/Program Files/IAR Systems/Embedded Workbench 5.0 Kickstart
+KEIL_INSTALL_ROOT	=C:/Keil
